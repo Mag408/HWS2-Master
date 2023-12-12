@@ -1,31 +1,34 @@
 .friendMessage {
-
+  height: 77px;
+  display: flex;
+  flex-direction: column;
 }
 
 .friendImageAndText {
-
+  display: flex;
 }
 
 .friendImageAndText img {
-
+  width: 49px;
 }
 
 .friendText {
-
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
 }
 
 .friendText:after {
-
 }
 
 .friendName {
-
 }
 
 .friendMessageText {
-
 }
 
 .friendTime {
-
+  font-size: 7px;
+  margin-top: 5px;
+  margin-left: 17px;
 }
