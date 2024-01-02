@@ -14,7 +14,7 @@ export const Header: FC<PropsType> = ({ handleOpen }) => {
   const currentPath = location.pathname;
 
   const pageName =
-    currentPath === "/"
+    currentPath === "/pre-junior"
       ? "Pre-junior"
       : currentPath === PATH.JUNIOR
       ? "Junior"
