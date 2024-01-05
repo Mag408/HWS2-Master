@@ -2,11 +2,11 @@
 }
 
 .header {
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
   padding: 10px 70px;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
 
 .header h1 {

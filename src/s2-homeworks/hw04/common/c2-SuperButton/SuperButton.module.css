@@ -1,9 +1,10 @@
 .button {
-padding: 10px 25px;
-background-color: #0066cc;
-color: white;
-border: none;
-border-radius: 3px;
+  padding: 10px 25px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-right: 20px;
 }
 
 .disabled {
@@ -21,33 +22,31 @@ border-radius: 3px;
 }
 
 .red {
-  background-color: #cc1439 
+  background-color: #cc1439;
 }
 
 .default:hover {
-background-color: #0080ff;
+  background-color: #0080ff;
 }
 
 .red:hover {
-background-color: #ff1947;
+  background-color: #ff1947;
 }
 
 .secondary:hover {
-background-color: #e5f0fa;
+  background-color: #e5f0fa;
 }
 
-
 .default:active {
-background-color: #0059b2;
+  background-color: #0059b2;
 }
 
 .secondary:active {
-background-color: #c9e5ff;
-
+  background-color: #c9e5ff;
 }
 
 .red:active {
-background-color: #b21232;
+  background-color: #b21232;
 }
 
 .button:disabled {
