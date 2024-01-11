@@ -27,7 +27,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         <option
           id={"hw7-option-" + o.id}
           className={s.option}
-          key={o.id}
+          key={o.name + "" + o.id}
           value={o.id}
         >
           {o.value}
