@@ -36,10 +36,11 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
     : []; // map options with key
 
   const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-    // onChange && onChange(e);
+    onChange && onChange(e);
     if (onChangeOption) {
       onChangeOption(Number(e.target.value));
     }
+    console.log(onChange);
   };
 
   const finalSelectClassName = s.select + (className ? " " + className : "");
