@@ -1,10 +1,12 @@
 .item {
+  padding: 20px;
 }
 
 .item:last-of-type {
 }
 
 .users {
+  padding: 20px;
 }
 
 .buttonsContainer {
@@ -14,10 +16,13 @@
 }
 
 .thead {
+  margin-bottom: 20px;
 }
 
 .nameCol {
+  width: 300px;
 }
 
 .ageCol {
+  margin-left: 200px;
 }
