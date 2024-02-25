@@ -45,6 +45,7 @@ const HW13 = () => {
           setImage(errorUnknown);
           setText("Network Error");
           setInfo("AxiosError");
+          return;
         }
         if (e.response.request.status == 500) {
           setCode("Код 500!");
@@ -53,6 +54,7 @@ const HW13 = () => {
           setInfo(
             "ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)"
           );
+          return;
         }
         if (e.response.request.status == 400) {
           setCode("Код 400!");
