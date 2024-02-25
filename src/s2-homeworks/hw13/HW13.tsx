@@ -40,8 +40,7 @@ const HW13 = () => {
         setInfo("код 200 - обычно означает что скорее всего всё ок)");
       })
       .catch((e) => {
-        console.log(e.response.request);
-        if (!e.response.request) {
+        if (!e.response || !e.response.request) {
           setCode("Error!");
           setImage(errorUnknown);
           setText("Network Error");
