@@ -36,28 +36,32 @@ const HW13 = () => {
       .then((res) => {
         setCode("Код 200!");
         setImage(success200);
-        setInfo("");
         setText("...всё ок)");
+        setInfo("код 200 - обычно означает что скорее всего всё ок)");
       })
       .catch((e) => {
         console.log(e.response.request);
         if (!e.response.request) {
           setCode("Error!");
           setImage(errorUnknown);
-          setInfo("");
           setText("Network Error");
+          setInfo("AxiosError");
         }
         if (e.response.request.status == 500) {
           setCode("Код 500!");
           setImage(error500);
-          setInfo("");
           setText("эмитация ошибки на сервере");
+          setInfo(
+            "ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)"
+          );
         }
         if (e.response.request.status == 400) {
           setCode("Код 400!");
           setImage(error400);
-          setInfo("");
           setText("Ты не отправил success в body вообще!");
+          setInfo(
+            "ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!"
+          );
         }
       });
   };
