@@ -37,6 +37,7 @@ const HW13 = () => {
         setCode("Код 200!");
         setImage(success200);
         setInfo("");
+        setText("...всё ок)");
       })
       .catch((e) => {
         console.log(e.response.request);
@@ -44,16 +45,19 @@ const HW13 = () => {
           setCode("Error!");
           setImage(errorUnknown);
           setInfo("");
+          setText("Network Error");
         }
         if (e.response.request.status == 500) {
           setCode("Код 500!");
           setImage(error500);
           setInfo("");
+          setText("эмитация ошибки на сервере");
         }
         if (e.response.request.status == 400) {
           setCode("Код 400!");
           setImage(error400);
           setInfo("");
+          setText("Ты не отправил success в body вообще!");
         }
       });
   };
